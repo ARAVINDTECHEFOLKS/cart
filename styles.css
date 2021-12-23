@@ -23,3 +23,6 @@ a:hover {
   color: white;
   cursor: pointer;
 }
+nav{
+    position:sticky;
+}
