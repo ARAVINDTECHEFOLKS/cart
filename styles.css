@@ -1,24 +1,19 @@
-li {
-  list-style: none;
-  color: white;
-}
-a {
+body {
+    color: white;
+    font-size: 16px;
+  }
+.nav_a {
   text-decoration: none;
   color: white;
   padding: 5px;
 }
-body {
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-}
-ul {
+.nav_ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
   align-items: center;
 }
-a:hover {
+.nav_a:hover {
   border: solid 1px #f0e985;
   color: white;
   cursor: pointer;
