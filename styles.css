@@ -1,23 +1,72 @@
-body {
-    color: white;
-    font-size: 16px;
-  }
-.nav_a {
+.nav-belt .row {
+  background-color: black;
+  color: white;
+}
+
+.anchor {
   text-decoration: none;
   color: white;
-  padding: 5px;
+  padding: 2px;
 }
-.nav_ul {
+.anchor:hover {
+  color: white;
+  border-radius: 5px;
+  border: 1px wheat solid;
+}
+
+.nav-left {
   display: flex;
-  list-style: none;
+  align-items: center;
   justify-content: space-around;
+  list-style: none;
+  font-weight: bold;
+  border: 0px;
+  margin: 0px;
+}
+.nav-fill {
+  display: flex;
   align-items: center;
 }
-.nav_a:hover {
-  border: solid 1px #f0e985;
-  color: white;
-  cursor: pointer;
+.nav-right {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  border: 0px;
+  margin: 0px;
 }
-nav{
-    position:sticky;
+.cart {
+  color: white;
+  text-decoration: none;
+}
+.cart:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-main .row {
+  background-color: #232f3e;
+  padding-top: 10px;
+  display: flex;
+  align-content: center;
+}
+.nav-mainleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-logo {
+  font-size: 20px;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+.nav-logo:hover {
+  position: relative;
+  color: white;
+  border-radius: 5px;
+  border: 1px wheat solid;
 }
