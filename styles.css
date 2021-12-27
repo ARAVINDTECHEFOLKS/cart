@@ -70,3 +70,16 @@
   border-radius: 5px;
   border: 1px wheat solid;
 }
+.table_margin {
+  margin: 35px;
+  padding-bottom: 20px;
+}
+.image_col {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+.btn_clr {
+  background-color: darkgray;
+}
