@@ -80,6 +80,19 @@
   margin-right: auto;
   object-fit: contain;
 }
-.btn_clr {
-  background-color: darkgray;
+.btn-clr {
+  background-color: rgba(169, 169, 169, 0.199);
+  border-radius: 10px;
+}
+.button{
+    font-size: small;
+    font-weight:500;
+    padding:0 10px ;
+    color: hsl(0, 4%, 41%);
+}
+.button:hover{
+    color: hsl(0, 4%, 41%);
+}
+.total{
+    text-align: right;
 }
