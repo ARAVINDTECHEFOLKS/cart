@@ -1,72 +1,37 @@
-.nav-belt .row {
-  background-color: black;
-  color: white;
-}
-
-.anchor {
-  text-decoration: none;
-  color: white;
+a {
   padding: 2px;
 }
-.anchor:hover {
+
+a:hover {
   color: white;
+  border: 1px solid rgba(255, 255, 0, 0.349);
   border-radius: 5px;
-  border: 1px wheat solid;
 }
-
-.nav-left {
+.nav{
+ 
+  flex-wrap: nowrap;
+}
+.navbar{
+  flex-wrap: nowrap;
+}
+#main{
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  font-weight: bold;
-  border: 0px;
-  margin: 0px;
+  flex-wrap: nowrap;
 }
-.nav-fill {
+.show-cart li {
   display: flex;
-  align-items: center;
 }
-.nav-right {
-  list-style: none;
+.card {
+  margin-bottom: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-weight: bold;
-  border: 0px;
-  margin: 0px;
+  justify-content: flex-start;
 }
-.cart {
-  color: white;
-  text-decoration: none;
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+  object-fit: contain;
 }
-.cart:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-main .row {
-  background-color: #232f3e;
-  padding-top: 10px;
-  display: flex;
-  align-content: center;
-}
-.nav-mainleft {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-}
-
-.nav-logo {
-  font-size: 20px;
-  display: flex;
-  text-decoration: none;
-  color: white;
-}
-.nav-logo:hover {
-  position: relative;
-  color: white;
-  border-radius: 5px;
-  border: 1px wheat solid;
+.price_color {
+  color: brown;
 }
