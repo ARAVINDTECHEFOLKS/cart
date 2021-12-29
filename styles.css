@@ -1,3 +1,4 @@
+
 .show-cart li {
   display: flex;
 }
@@ -53,61 +54,35 @@ body {
 .anchor {
   text-decoration: none;
   color: white;
+
+a {
+
   padding: 2px;
 }
-.anchor:hover {
+
+a:hover {
   color: white;
+  border: 1px solid rgba(255, 255, 0, 0.349);
   border-radius: 5px;
-  border: 1px wheat solid;
 }
+.nav{
+ 
+  flex-wrap: nowrap;
+}
+.navbar{
+  flex-wrap: nowrap;
+}
+#main{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+  display: flex;
 
-.nav-left {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  font-weight: bold;
-  border: 0px;
-  margin: 0px;
-}
-.nav-fill {
-  display: flex;
-  align-items: center;
-}
-.nav-right {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-weight: bold;
-  border: 0px;
-  margin: 0px;
-}
-.cart {
-  color: white;
-  text-decoration: none;
-}
-.cart:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-main .row {
-  background-color: #232f3e;
-  padding-top: 10px;
-  display: flex;
-  align-content: center;
-}
-.nav-mainleft {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-}
-
-.nav-logo {
-  font-size: 20px;
-  display: flex;
   text-decoration: none;
   color: white;
 }
@@ -116,6 +91,18 @@ body {
   color: white;
   border-radius: 5px;
   border: 1px wheat solid;
+=======
+  justify-content: flex-start;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+  object-fit: contain;
+}
+.price_color {
+  color: brown;
+
 }
 .table_margin {
   margin: 35px;
@@ -131,6 +118,7 @@ body {
   background-color: rgba(169, 169, 169, 0.199);
   border-radius: 10px;
 }
+
 .button {
   font-size: small;
   font-weight: 500;
@@ -143,3 +131,17 @@ body {
 .total {
   text-align: right;
 }
+
+.button{
+    font-size: small;
+    font-weight:500;
+    padding:0 10px ;
+    color: hsl(0, 4%, 41%);
+}
+.button:hover{
+    color: hsl(0, 4%, 41%);
+}
+.total{
+    text-align: right;
+}
+
