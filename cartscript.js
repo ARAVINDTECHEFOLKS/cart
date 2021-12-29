@@ -153,64 +153,38 @@ function displayCart() {
       inCartCount = item.inCart;
 
       console.log(total);
-      // let decrease = document.querySelectorAll(".dBtn");
-      // for (var i = 0; i < decrease.length; i++) {
-      //   decrease[i].onclick = function decreaseValue() {
-      //     num = num - 1;
-      //     document.getElementById("value").innerHTML = num;
-      //   };
-      // }
-      // let increase = document.querySelectorAll(".iBtn");
-      // for (var i = 0; i < increase.length; i++) {
-      //   increase[i].onclick = function decreaseValue() {
-      //     num = num + 1;
-      //     document.getElementById("value").innerHTML = num;
-      //   };
-      // }
-
-      // console.log(k);
     });
     Object.values(cartItems).map((item) => {
       let decrease = document.querySelectorAll(".dBtn");
       let valueD = document.querySelectorAll(".value");
+      let num = new Array(decrease.length);
+      num.fill(inCartCount);
 
       for (let j = 0; j < decrease.length; j++) {
-        let num = inCartCount;
-        var cartNumPass2;
-        var outNum = num;
-
         decrease[j].onclick = function decreaseValue() {
-          if (cartNumPass2 != null && cartNumPass2 != undefined) {
-            console.log("you are here");
-            if (cartNumPass2 === outNum + 1) {
-              let cartNumD = outNum;
-              var numOfBlock = cartNumD;
-            } else {
-              let cartNumD = cartNumPass2;
-              var numOfBlock = cartNumD;
-            }
-          } else {
-            console.log(" why you are here");
-            let cartNumD = num;
-            var numOfBlock = cartNumD;
-          }
           console.log("decrease" + j);
-          numOfBlock = numOfBlock - 1;
-          valueD[j].innerHTML = numOfBlock;
-          outNum = numOfBlock;
+          let numD = num[j];
+          numD = numD - 1;
+          valueD[j].innerHTML = numD;
+          num[j] = numD;
+          if (numD < 1) {
+            num[j] = 1;
+            valueD[j].innerHTML = num[j];
+          }
         };
-        var cartnumPass = outNum;
       }
       let increase = document.querySelectorAll(".iBtn");
-      //let valueI = document.querySelectorAll(".value");
       for (let j = 0; j < increase.length; j++) {
-        let cartNumI = cartnumPass;
-
         increase[j].onclick = function increaseValue() {
           console.log("increase" + j);
-          cartNumI = cartNumI + 1;
-          valueD[j].innerHTML = cartNumI;
-          cartNumPass2 = cartNumI;
+          let numI = num[j];
+          numI = numI + 1;
+          valueD[j].innerHTML = numI;
+          num[j] = numI;
+          if (numI < 1) {
+            num[j] = 1;
+            valueD[j].innerHTML = num[j];
+          }
         };
       }
       k++;
